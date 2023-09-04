@@ -54,58 +54,76 @@ Namespace My
             End Get
         End Property
         
-        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.DefaultSettingValueAttribute("admin")>  _
-        Public ReadOnly Property login() As String
+        Public Property AUTH_l() As String
             Get
-                Return CType(Me("login"),String)
+                Return CType(Me("AUTH_l"),String)
             End Get
+            Set
+                Me("AUTH_l") = value
+            End Set
         End Property
         
-        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.DefaultSettingValueAttribute("admin")>  _
-        Public ReadOnly Property password() As String
+        Public Property AUTH_P() As String
             Get
-                Return CType(Me("password"),String)
+                Return CType(Me("AUTH_P"),String)
             End Get
+            Set
+                Me("AUTH_P") = value
+            End Set
         End Property
         
-        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
-        Public ReadOnly Property Nikita() As Integer
+        Public Property Nikita() As Integer
             Get
                 Return CType(Me("Nikita"),Integer)
             End Get
+            Set
+                Me("Nikita") = value
+            End Set
         End Property
         
-        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
-        Public ReadOnly Property Alexandr() As Integer
+        Public Property Alexandr() As Integer
             Get
                 Return CType(Me("Alexandr"),Integer)
             End Get
+            Set
+                Me("Alexandr") = value
+            End Set
         End Property
         
-        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
-        Public ReadOnly Property Svetlana() As Integer
+        Public Property Svetlana() As Integer
             Get
                 Return CType(Me("Svetlana"),Integer)
             End Get
+            Set
+                Me("Svetlana") = value
+            End Set
         End Property
         
-        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
-        Public ReadOnly Property Yuriy() As Integer
+        Public Property Yuriy() As Integer
             Get
                 Return CType(Me("Yuriy"),Integer)
             End Get
+            Set
+                Me("Yuriy") = value
+            End Set
         End Property
     End Class
 End Namespace

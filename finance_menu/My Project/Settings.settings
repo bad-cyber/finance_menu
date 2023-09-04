@@ -2,22 +2,22 @@
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
   <Profiles />
   <Settings>
-    <Setting Name="login" Type="System.String" Scope="Application">
+    <Setting Name="AUTH_l" Type="System.String" Scope="User">
       <Value Profile="(Default)">admin</Value>
     </Setting>
-    <Setting Name="password" Type="System.String" Scope="Application">
+    <Setting Name="AUTH_P" Type="System.String" Scope="User">
       <Value Profile="(Default)">admin</Value>
     </Setting>
-    <Setting Name="Nikita" Type="System.Int32" Scope="Application">
+    <Setting Name="Nikita" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="Alexandr" Type="System.Int32" Scope="Application">
+    <Setting Name="Alexandr" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="Svetlana" Type="System.Int32" Scope="Application">
+    <Setting Name="Svetlana" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="Yuriy" Type="System.Int32" Scope="Application">
+    <Setting Name="Yuriy" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
   </Settings>

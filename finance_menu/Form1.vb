@@ -2,6 +2,8 @@
 
 Public Class Form1
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        db_editor_log.Text = My.Settings.AUTH_l
+        db_editor_pas.Text = My.Settings.AUTH_P
         ProgressBar1.Maximum = My.Settings.Nikita
     End Sub
 
@@ -24,10 +26,13 @@ Public Class Form1
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         ProgressBar1.Maximum += TextBox1.Text
         Label1.Text = ProgressBar1.Maximum
+        My.Settings.Nikita = ProgressBar1.Maximum
         My.Settings.Upgrade()
         My.Settings.Save()
     End Sub
     Private Sub Form1_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
+        My.Settings.Nikita = ProgressBar1.Maximum
+        My.Settings.Save()
         LoginForm1.Close()
     End Sub
 End Class
