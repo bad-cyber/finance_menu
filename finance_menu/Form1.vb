@@ -31,7 +31,7 @@ Public Class Form1
         My.Settings.Save()
     End Sub
     Private Sub Form1_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
-        My.Settings.Nikita = ProgressBar1.Maximum - ProgressBar1.Value
+        My.Settings.Nikita = ProgressBar1.Maximum - ProgressBar1.Value 'Сохраняем результаты изменений в приложение
         My.Settings.Save()
         LoginForm1.Close()
     End Sub
