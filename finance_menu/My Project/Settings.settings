@@ -2,22 +2,28 @@
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
   <Profiles />
   <Settings>
-    <Setting Name="AUTH_l" Type="System.String" Scope="User">
+    <Setting Name="rt_6M6A__PMP8G_Es2cT" Type="System.String" Scope="User">
       <Value Profile="(Default)">admin</Value>
     </Setting>
-    <Setting Name="AUTH_P" Type="System.String" Scope="User">
+    <Setting Name="w_4HD_w5Fqkv6ref_Kq" Type="System.String" Scope="User">
       <Value Profile="(Default)">admin</Value>
     </Setting>
-    <Setting Name="Nikita" Type="System.Int32" Scope="User">
+    <Setting Name="xZeyZSDtZ_M8PpJCn" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="Alexandr" Type="System.Int32" Scope="User">
+    <Setting Name="y6X6eyNr_ZGNgPK2M" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="Svetlana" Type="System.Int32" Scope="User">
+    <Setting Name="W84Ammg_gcy__LhxKja" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="Yuriy" Type="System.Int32" Scope="User">
+    <Setting Name="JVJtJ4z_A9V3FnwmS" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="y7pZ9AWbPxx_Cy_28X" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="xcwsG_2Pga_sEtwzcj" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
   </Settings>

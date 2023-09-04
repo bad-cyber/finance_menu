@@ -57,72 +57,96 @@ Namespace My
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.DefaultSettingValueAttribute("admin")>  _
-        Public Property AUTH_l() As String
+        Public Property rt_6M6A__PMP8G_Es2cT() As String
             Get
-                Return CType(Me("AUTH_l"),String)
+                Return CType(Me("rt_6M6A__PMP8G_Es2cT"),String)
             End Get
             Set
-                Me("AUTH_l") = value
+                Me("rt_6M6A__PMP8G_Es2cT") = value
             End Set
         End Property
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.DefaultSettingValueAttribute("admin")>  _
-        Public Property AUTH_P() As String
+        Public Property w_4HD_w5Fqkv6ref_Kq() As String
             Get
-                Return CType(Me("AUTH_P"),String)
+                Return CType(Me("w_4HD_w5Fqkv6ref_Kq"),String)
             End Get
             Set
-                Me("AUTH_P") = value
+                Me("w_4HD_w5Fqkv6ref_Kq") = value
             End Set
         End Property
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
-        Public Property Nikita() As Integer
+        Public Property xZeyZSDtZ_M8PpJCn() As Integer
             Get
-                Return CType(Me("Nikita"),Integer)
+                Return CType(Me("xZeyZSDtZ_M8PpJCn"),Integer)
             End Get
             Set
-                Me("Nikita") = value
+                Me("xZeyZSDtZ_M8PpJCn") = value
             End Set
         End Property
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
-        Public Property Alexandr() As Integer
+        Public Property y6X6eyNr_ZGNgPK2M() As Integer
             Get
-                Return CType(Me("Alexandr"),Integer)
+                Return CType(Me("y6X6eyNr_ZGNgPK2M"),Integer)
             End Get
             Set
-                Me("Alexandr") = value
+                Me("y6X6eyNr_ZGNgPK2M") = value
             End Set
         End Property
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
-        Public Property Svetlana() As Integer
+        Public Property W84Ammg_gcy__LhxKja() As Integer
             Get
-                Return CType(Me("Svetlana"),Integer)
+                Return CType(Me("W84Ammg_gcy__LhxKja"),Integer)
             End Get
             Set
-                Me("Svetlana") = value
+                Me("W84Ammg_gcy__LhxKja") = value
             End Set
         End Property
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
-        Public Property Yuriy() As Integer
+        Public Property JVJtJ4z_A9V3FnwmS() As Integer
             Get
-                Return CType(Me("Yuriy"),Integer)
+                Return CType(Me("JVJtJ4z_A9V3FnwmS"),Integer)
             End Get
             Set
-                Me("Yuriy") = value
+                Me("JVJtJ4z_A9V3FnwmS") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property y7pZ9AWbPxx_Cy_28X() As Integer
+            Get
+                Return CType(Me("y7pZ9AWbPxx_Cy_28X"),Integer)
+            End Get
+            Set
+                Me("y7pZ9AWbPxx_Cy_28X") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property xcwsG_2Pga_sEtwzcj() As Integer
+            Get
+                Return CType(Me("xcwsG_2Pga_sEtwzcj"),Integer)
+            End Get
+            Set
+                Me("xcwsG_2Pga_sEtwzcj") = value
             End Set
         End Property
     End Class
