@@ -17,7 +17,7 @@ Partial Class LoginForm1
     Friend WithEvents LogoPictureBox As System.Windows.Forms.PictureBox
     Friend WithEvents UsernameLabel As System.Windows.Forms.Label
     Friend WithEvents PasswordLabel As System.Windows.Forms.Label
-    Friend WithEvents UsernameTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents QPyzM_mr4w6Wgf_pHd As System.Windows.Forms.TextBox
     Friend WithEvents PasswordTextBox As System.Windows.Forms.TextBox
     Friend WithEvents OK As System.Windows.Forms.Button
 
@@ -32,7 +32,7 @@ Partial Class LoginForm1
         Me.LogoPictureBox = New System.Windows.Forms.PictureBox()
         Me.UsernameLabel = New System.Windows.Forms.Label()
         Me.PasswordLabel = New System.Windows.Forms.Label()
-        Me.UsernameTextBox = New System.Windows.Forms.TextBox()
+        Me.QPyzM_mr4w6Wgf_pHd = New System.Windows.Forms.TextBox()
         Me.PasswordTextBox = New System.Windows.Forms.TextBox()
         Me.OK = New System.Windows.Forms.Button()
         CType(Me.LogoPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -70,12 +70,12 @@ Partial Class LoginForm1
         '
         'UsernameTextBox
         '
-        Me.UsernameTextBox.BackColor = System.Drawing.SystemColors.Menu
-        Me.UsernameTextBox.Location = New System.Drawing.Point(232, 54)
-        Me.UsernameTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.UsernameTextBox.Name = "UsernameTextBox"
-        Me.UsernameTextBox.Size = New System.Drawing.Size(220, 20)
-        Me.UsernameTextBox.TabIndex = 1
+        Me.QPyzM_mr4w6Wgf_pHd.BackColor = System.Drawing.SystemColors.Menu
+        Me.QPyzM_mr4w6Wgf_pHd.Location = New System.Drawing.Point(232, 54)
+        Me.QPyzM_mr4w6Wgf_pHd.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.QPyzM_mr4w6Wgf_pHd.Name = "UsernameTextBox"
+        Me.QPyzM_mr4w6Wgf_pHd.Size = New System.Drawing.Size(220, 20)
+        Me.QPyzM_mr4w6Wgf_pHd.TabIndex = 1
         '
         'PasswordTextBox
         '
@@ -105,7 +105,7 @@ Partial Class LoginForm1
         Me.ClientSize = New System.Drawing.Size(401, 192)
         Me.Controls.Add(Me.OK)
         Me.Controls.Add(Me.PasswordTextBox)
-        Me.Controls.Add(Me.UsernameTextBox)
+        Me.Controls.Add(Me.QPyzM_mr4w6Wgf_pHd)
         Me.Controls.Add(Me.PasswordLabel)
         Me.Controls.Add(Me.UsernameLabel)
         Me.Controls.Add(Me.LogoPictureBox)
