@@ -174,5 +174,8 @@
   <ItemGroup>
     <None Include="Resources\Без имени-1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Picsart_23-09-04_16-44-14-541.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

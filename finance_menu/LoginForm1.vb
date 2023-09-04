@@ -18,4 +18,8 @@ Public Class LoginForm1
             PasswordTextBox.Clear()
         End If 'Базовая проверка на правильность введённых данных
     End Sub
+
+    Private Sub LoginForm1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class
