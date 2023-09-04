@@ -40,13 +40,13 @@ Partial Class LoginForm1
         '
         'LogoPictureBox
         '
-        Me.LogoPictureBox.BackgroundImage = Global.finance_menu.My.Resources.Resources._19__Самолеты
+        Me.LogoPictureBox.BackgroundImage = Global.finance_menu.My.Resources.Resources.Без_имени_1
         Me.LogoPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.LogoPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.LogoPictureBox.Location = New System.Drawing.Point(-13, 0)
-        Me.LogoPictureBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.LogoPictureBox.Location = New System.Drawing.Point(-3, -3)
+        Me.LogoPictureBox.Margin = New System.Windows.Forms.Padding(4)
         Me.LogoPictureBox.Name = "LogoPictureBox"
-        Me.LogoPictureBox.Size = New System.Drawing.Size(218, 305)
+        Me.LogoPictureBox.Size = New System.Drawing.Size(227, 243)
         Me.LogoPictureBox.TabIndex = 0
         Me.LogoPictureBox.TabStop = False
         '
@@ -74,7 +74,7 @@ Partial Class LoginForm1
         '
         Me.UsernameTextBox.BackColor = System.Drawing.SystemColors.Menu
         Me.UsernameTextBox.Location = New System.Drawing.Point(232, 54)
-        Me.UsernameTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.UsernameTextBox.Margin = New System.Windows.Forms.Padding(4)
         Me.UsernameTextBox.Name = "UsernameTextBox"
         Me.UsernameTextBox.Size = New System.Drawing.Size(292, 22)
         Me.UsernameTextBox.TabIndex = 1
@@ -83,7 +83,7 @@ Partial Class LoginForm1
         '
         Me.PasswordTextBox.BackColor = System.Drawing.SystemColors.Menu
         Me.PasswordTextBox.Location = New System.Drawing.Point(232, 124)
-        Me.PasswordTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PasswordTextBox.Margin = New System.Windows.Forms.Padding(4)
         Me.PasswordTextBox.Name = "PasswordTextBox"
         Me.PasswordTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.PasswordTextBox.Size = New System.Drawing.Size(292, 22)
@@ -93,7 +93,7 @@ Partial Class LoginForm1
         '
         Me.OK.BackColor = System.Drawing.SystemColors.ButtonShadow
         Me.OK.Location = New System.Drawing.Point(293, 193)
-        Me.OK.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.OK.Margin = New System.Windows.Forms.Padding(4)
         Me.OK.Name = "OK"
         Me.OK.Size = New System.Drawing.Size(155, 28)
         Me.OK.TabIndex = 4
@@ -114,7 +114,7 @@ Partial Class LoginForm1
         Me.Controls.Add(Me.UsernameLabel)
         Me.Controls.Add(Me.LogoPictureBox)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "LoginForm1"

@@ -35,8 +35,4 @@ Public Class Form1
         My.Settings.Save()
         LoginForm1.Close()
     End Sub
-
-    Private Sub page1_Click(sender As Object, e As EventArgs) Handles page1.Click
-
-    End Sub
 End Class
