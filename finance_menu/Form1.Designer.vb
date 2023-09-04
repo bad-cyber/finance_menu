@@ -58,35 +58,31 @@ Partial Class Form1
         Me.TabControl1.Controls.Add(Me.page6)
         Me.TabControl1.Controls.Add(Me.page_settings)
         Me.TabControl1.Location = New System.Drawing.Point(1, -1)
-        Me.TabControl1.Margin = New System.Windows.Forms.Padding(4)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(468, 439)
+        Me.TabControl1.Size = New System.Drawing.Size(447, 357)
         Me.TabControl1.TabIndex = 5
         '
         'page1
         '
-        Me.page1.BackColor = System.Drawing.Color.Black
+        Me.page1.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer))
         Me.page1.Controls.Add(Me.TextBox1)
         Me.page1.Controls.Add(Me.Label1)
         Me.page1.Controls.Add(Me.Button2)
         Me.page1.Controls.Add(Me.Button1)
         Me.page1.Controls.Add(Me.ProgressBar1)
-        Me.page1.Location = New System.Drawing.Point(4, 25)
-        Me.page1.Margin = New System.Windows.Forms.Padding(4)
+        Me.page1.Location = New System.Drawing.Point(4, 22)
         Me.page1.Name = "page1"
-        Me.page1.Padding = New System.Windows.Forms.Padding(4)
-        Me.page1.Size = New System.Drawing.Size(460, 410)
+        Me.page1.Padding = New System.Windows.Forms.Padding(3)
+        Me.page1.Size = New System.Drawing.Size(439, 331)
         Me.page1.TabIndex = 0
         Me.page1.Text = "Никита"
         '
         'TextBox1
         '
-        Me.TextBox1.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.TextBox1.Location = New System.Drawing.Point(131, 169)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBox1.Location = New System.Drawing.Point(98, 137)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(195, 22)
+        Me.TextBox1.Size = New System.Drawing.Size(236, 20)
         Me.TextBox1.TabIndex = 4
         '
         'Label1
@@ -94,92 +90,80 @@ Partial Class Form1
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.Label1.Font = New System.Drawing.Font("Mongolian Baiti", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(225, 129)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Location = New System.Drawing.Point(196, 108)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(29, 20)
+        Me.Label1.Size = New System.Drawing.Size(46, 16)
         Me.Label1.TabIndex = 3
-        Me.Label1.Text = "12"
+        Me.Label1.Text = "TEXT"
         '
         'Button2
         '
-        Me.Button2.BackColor = System.Drawing.Color.Lime
-        Me.Button2.Location = New System.Drawing.Point(9, 165)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button2.Location = New System.Drawing.Point(7, 134)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(113, 28)
+        Me.Button2.Size = New System.Drawing.Size(85, 23)
         Me.Button2.TabIndex = 1
         Me.Button2.Text = "Вернул"
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.Button2.UseVisualStyleBackColor = True
         '
         'Button1
         '
-        Me.Button1.BackColor = System.Drawing.Color.Crimson
-        Me.Button1.Location = New System.Drawing.Point(335, 165)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button1.Location = New System.Drawing.Point(340, 134)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(115, 28)
+        Me.Button1.Size = New System.Drawing.Size(86, 23)
         Me.Button1.TabIndex = 0
         Me.Button1.Text = "Взял"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'ProgressBar1
         '
-        Me.ProgressBar1.BackColor = System.Drawing.Color.DimGray
-        Me.ProgressBar1.Location = New System.Drawing.Point(4, 129)
-        Me.ProgressBar1.Margin = New System.Windows.Forms.Padding(4)
+        Me.ProgressBar1.Location = New System.Drawing.Point(0, 105)
         Me.ProgressBar1.Maximum = 1
         Me.ProgressBar1.Name = "ProgressBar1"
-        Me.ProgressBar1.Size = New System.Drawing.Size(452, 28)
+        Me.ProgressBar1.Size = New System.Drawing.Size(439, 23)
         Me.ProgressBar1.TabIndex = 2
         '
         'page2
         '
-        Me.page2.BackColor = System.Drawing.Color.Black
-        Me.page2.Location = New System.Drawing.Point(4, 25)
-        Me.page2.Margin = New System.Windows.Forms.Padding(4)
+        Me.page2.Location = New System.Drawing.Point(4, 22)
         Me.page2.Name = "page2"
-        Me.page2.Padding = New System.Windows.Forms.Padding(4)
-        Me.page2.Size = New System.Drawing.Size(460, 410)
+        Me.page2.Padding = New System.Windows.Forms.Padding(3)
+        Me.page2.Size = New System.Drawing.Size(343, 331)
         Me.page2.TabIndex = 1
         Me.page2.Text = "Александр"
+        Me.page2.UseVisualStyleBackColor = True
         '
         'page3
         '
-        Me.page3.BackColor = System.Drawing.Color.Black
-        Me.page3.Location = New System.Drawing.Point(4, 25)
-        Me.page3.Margin = New System.Windows.Forms.Padding(4)
+        Me.page3.Location = New System.Drawing.Point(4, 22)
         Me.page3.Name = "page3"
-        Me.page3.Size = New System.Drawing.Size(460, 410)
+        Me.page3.Size = New System.Drawing.Size(343, 331)
         Me.page3.TabIndex = 2
         Me.page3.Text = "Светлана"
+        Me.page3.UseVisualStyleBackColor = True
         '
         'page4
         '
-        Me.page4.BackColor = System.Drawing.Color.Black
-        Me.page4.Location = New System.Drawing.Point(4, 25)
-        Me.page4.Margin = New System.Windows.Forms.Padding(4)
+        Me.page4.Location = New System.Drawing.Point(4, 22)
         Me.page4.Name = "page4"
-        Me.page4.Size = New System.Drawing.Size(460, 410)
+        Me.page4.Size = New System.Drawing.Size(343, 331)
         Me.page4.TabIndex = 3
         Me.page4.Text = "Юрий"
+        Me.page4.UseVisualStyleBackColor = True
         '
         'page5
         '
-        Me.page5.Location = New System.Drawing.Point(4, 25)
-        Me.page5.Margin = New System.Windows.Forms.Padding(4)
+        Me.page5.Location = New System.Drawing.Point(4, 22)
         Me.page5.Name = "page5"
-        Me.page5.Size = New System.Drawing.Size(460, 410)
+        Me.page5.Size = New System.Drawing.Size(343, 331)
         Me.page5.TabIndex = 4
         Me.page5.Text = "TabPage5"
         Me.page5.UseVisualStyleBackColor = True
         '
         'page6
         '
-        Me.page6.Location = New System.Drawing.Point(4, 25)
-        Me.page6.Margin = New System.Windows.Forms.Padding(4)
+        Me.page6.Location = New System.Drawing.Point(4, 22)
         Me.page6.Name = "page6"
-        Me.page6.Size = New System.Drawing.Size(460, 410)
+        Me.page6.Size = New System.Drawing.Size(439, 331)
         Me.page6.TabIndex = 5
         Me.page6.Text = "TabPage6"
         Me.page6.UseVisualStyleBackColor = True
@@ -193,19 +177,17 @@ Partial Class Form1
         Me.page_settings.Controls.Add(Me.db_editor_log)
         Me.page_settings.Controls.Add(Me.LinkLabel1)
         Me.page_settings.Controls.Add(Me.Button3)
-        Me.page_settings.Location = New System.Drawing.Point(4, 25)
-        Me.page_settings.Margin = New System.Windows.Forms.Padding(4)
+        Me.page_settings.Location = New System.Drawing.Point(4, 22)
         Me.page_settings.Name = "page_settings"
-        Me.page_settings.Size = New System.Drawing.Size(460, 410)
+        Me.page_settings.Size = New System.Drawing.Size(439, 331)
         Me.page_settings.TabIndex = 6
         Me.page_settings.Text = "Settings"
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(357, 0)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button4.Location = New System.Drawing.Point(364, -1)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(100, 28)
+        Me.Button4.Size = New System.Drawing.Size(75, 23)
         Me.Button4.TabIndex = 5
         Me.Button4.Text = "Logon"
         Me.Button4.UseVisualStyleBackColor = True
@@ -213,47 +195,42 @@ Partial Class Form1
         'LinkLabel2
         '
         Me.LinkLabel2.AutoSize = True
-        Me.LinkLabel2.Location = New System.Drawing.Point(25, 106)
-        Me.LinkLabel2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LinkLabel2.Location = New System.Drawing.Point(19, 86)
         Me.LinkLabel2.Name = "LinkLabel2"
-        Me.LinkLabel2.Size = New System.Drawing.Size(69, 17)
+        Me.LinkLabel2.Size = New System.Drawing.Size(53, 13)
         Me.LinkLabel2.TabIndex = 4
         Me.LinkLabel2.TabStop = True
         Me.LinkLabel2.Text = "Password"
         '
         'db_editor_pas
         '
-        Me.db_editor_pas.Location = New System.Drawing.Point(29, 126)
-        Me.db_editor_pas.Margin = New System.Windows.Forms.Padding(4)
+        Me.db_editor_pas.Location = New System.Drawing.Point(22, 102)
         Me.db_editor_pas.Name = "db_editor_pas"
-        Me.db_editor_pas.Size = New System.Drawing.Size(132, 22)
+        Me.db_editor_pas.Size = New System.Drawing.Size(100, 20)
         Me.db_editor_pas.TabIndex = 3
         '
         'db_editor_log
         '
-        Me.db_editor_log.Location = New System.Drawing.Point(29, 78)
-        Me.db_editor_log.Margin = New System.Windows.Forms.Padding(4)
+        Me.db_editor_log.Location = New System.Drawing.Point(22, 63)
         Me.db_editor_log.Name = "db_editor_log"
-        Me.db_editor_log.Size = New System.Drawing.Size(132, 22)
+        Me.db_editor_log.Size = New System.Drawing.Size(100, 20)
         Me.db_editor_log.TabIndex = 2
         '
         'LinkLabel1
         '
         Me.LinkLabel1.AutoSize = True
-        Me.LinkLabel1.Location = New System.Drawing.Point(25, 58)
-        Me.LinkLabel1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LinkLabel1.Location = New System.Drawing.Point(19, 47)
         Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(43, 17)
+        Me.LinkLabel1.Size = New System.Drawing.Size(33, 13)
         Me.LinkLabel1.TabIndex = 1
         Me.LinkLabel1.TabStop = True
         Me.LinkLabel1.Text = "Login"
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(29, 158)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button3.Location = New System.Drawing.Point(22, 128)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(100, 28)
+        Me.Button3.Size = New System.Drawing.Size(75, 23)
         Me.Button3.TabIndex = 0
         Me.Button3.Text = "Change"
         Me.Button3.UseVisualStyleBackColor = True
@@ -265,14 +242,15 @@ Partial Class Form1
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(467, 436)
+        Me.ClientSize = New System.Drawing.Size(443, 354)
         Me.Controls.Add(Me.TabControl1)
-        Me.Margin = New System.Windows.Forms.Padding(4)
+        Me.MaximumSize = New System.Drawing.Size(459, 393)
+        Me.MinimumSize = New System.Drawing.Size(459, 393)
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Text = "Finance Operations"
         Me.TabControl1.ResumeLayout(False)
         Me.page1.ResumeLayout(False)
         Me.page1.PerformLayout()
