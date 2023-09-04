@@ -21,8 +21,8 @@ Public Class LoginForm1
             MsgBox("Внимание! Пустые строки не являются переменными! Введите необходимые данные и повторите попытку.", MsgBoxStyle.Critical, "Ошибка №63!") : Exit Sub
         ElseIf QPyzM_mr4w6Wgf_pHd.Text IsNot My.Settings.rt_6M6A__PMP8G_Es2cT Or PasswordTextBox.Text IsNot My.Settings.w_4HD_w5Fqkv6ref_Kq Then
             MsgBox("Внимание! Данные не найдены в базе данных. Пожалуйста проверьте подключение к интернету и повторите попытку.", MsgBoxStyle.Critical, "Ошибка №70!")
-            'QPyzM_mr4w6Wgf_pHd.Clear()
-            'PasswordTextBox.Clear()
+            QPyzM_mr4w6Wgf_pHd.Clear()
+            PasswordTextBox.Clear()
         End If 'Базовая проверка на правильность введённых данных
     End Sub
 
