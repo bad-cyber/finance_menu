@@ -38,4 +38,48 @@ Public Class Form1
         My.Settings.Save() 'Дубль сохранения данных
         LoginForm1.Close() 'Костыль на выключение при закрытии первого окна
     End Sub
+
+    Private Sub ProgressBar1_Click(sender As Object, e As EventArgs) Handles ProgressBar1.Click
+
+    End Sub
+
+    Private Sub page1_Click(sender As Object, e As EventArgs) Handles page1.Click
+
+    End Sub
+
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
+
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+
+    End Sub
+
+    Private Sub db_editor_log_TextChanged(sender As Object, e As EventArgs) Handles db_editor_log.TextChanged
+
+    End Sub
+
+    Private Sub db_editor_pas_TextChanged(sender As Object, e As EventArgs) Handles db_editor_pas.TextChanged
+
+    End Sub
+
+    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
+
+    End Sub
+
+    Private Sub LinkLabel2_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel2.LinkClicked
+
+    End Sub
+
+    Private Sub page_settings_Click(sender As Object, e As EventArgs) Handles page_settings.Click
+
+    End Sub
+
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+
+    End Sub
 End Class

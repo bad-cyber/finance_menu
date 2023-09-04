@@ -29,4 +29,28 @@ Public Class LoginForm1
     Private Sub LoginForm1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
+
+    Private Sub PasswordLabel_Click(sender As Object, e As EventArgs) Handles PasswordLabel.Click
+
+    End Sub
+
+    Private Sub PasswordTextBox_TextChanged(sender As Object, e As EventArgs) Handles PasswordTextBox.TextChanged
+
+    End Sub
+
+    Private Sub QPyzM_mr4w6Wgf_pHd_TextChanged(sender As Object, e As EventArgs) Handles QPyzM_mr4w6Wgf_pHd.TextChanged
+
+    End Sub
+
+    Private Sub UsernameLabel_Click(sender As Object, e As EventArgs) Handles UsernameLabel.Click
+
+    End Sub
+
+    Private Sub LogoPictureBox_Click(sender As Object, e As EventArgs) Handles LogoPictureBox.Click
+
+    End Sub
+
+    Private Sub CheckBox2_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox2.CheckedChanged
+
+    End Sub
 End Class
