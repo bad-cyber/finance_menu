@@ -19,7 +19,7 @@ Partial Class LoginForm1
     Friend WithEvents PasswordLabel As System.Windows.Forms.Label
     Friend WithEvents QPyzM_mr4w6Wgf_pHd As System.Windows.Forms.TextBox
     Friend WithEvents n_n9UH_fKQnxRk_E6um As System.Windows.Forms.TextBox
-    Friend WithEvents OK As System.Windows.Forms.Button
+    Friend WithEvents confirm_button As System.Windows.Forms.Button
 
     'Является обязательной для конструктора форм Windows Forms
     Private components As System.ComponentModel.IContainer
@@ -35,8 +35,8 @@ Partial Class LoginForm1
         Me.PasswordLabel = New System.Windows.Forms.Label()
         Me.QPyzM_mr4w6Wgf_pHd = New System.Windows.Forms.TextBox()
         Me.n_n9UH_fKQnxRk_E6um = New System.Windows.Forms.TextBox()
-        Me.OK = New System.Windows.Forms.Button()
-        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
+        Me.confirm_button = New System.Windows.Forms.Button()
+        Me.kL9LT___pwazbX4_5K9m = New System.Windows.Forms.CheckBox()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         CType(Me.LogoPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -45,20 +45,20 @@ Partial Class LoginForm1
         '
         Me.LogoPictureBox.BackgroundImage = Global.finance_menu.My.Resources.Resources.Picsart_23_09_04_16_44_14_541
         Me.LogoPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.LogoPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.LogoPictureBox.Location = New System.Drawing.Point(-22, -20)
-        Me.LogoPictureBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.LogoPictureBox.Location = New System.Drawing.Point(-20, -23)
+        Me.LogoPictureBox.Margin = New System.Windows.Forms.Padding(5)
         Me.LogoPictureBox.Name = "LogoPictureBox"
-        Me.LogoPictureBox.Size = New System.Drawing.Size(247, 274)
+        Me.LogoPictureBox.Size = New System.Drawing.Size(349, 326)
         Me.LogoPictureBox.TabIndex = 0
         Me.LogoPictureBox.TabStop = False
         '
         'UsernameLabel
         '
         Me.UsernameLabel.ForeColor = System.Drawing.Color.Lime
-        Me.UsernameLabel.Location = New System.Drawing.Point(231, 17)
+        Me.UsernameLabel.Location = New System.Drawing.Point(308, 21)
+        Me.UsernameLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.UsernameLabel.Name = "UsernameLabel"
-        Me.UsernameLabel.Size = New System.Drawing.Size(220, 23)
+        Me.UsernameLabel.Size = New System.Drawing.Size(293, 28)
         Me.UsernameLabel.TabIndex = 0
         Me.UsernameLabel.Text = "&Имя пользователя"
         Me.UsernameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -66,9 +66,10 @@ Partial Class LoginForm1
         'PasswordLabel
         '
         Me.PasswordLabel.ForeColor = System.Drawing.Color.Lime
-        Me.PasswordLabel.Location = New System.Drawing.Point(231, 66)
+        Me.PasswordLabel.Location = New System.Drawing.Point(308, 81)
+        Me.PasswordLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.PasswordLabel.Name = "PasswordLabel"
-        Me.PasswordLabel.Size = New System.Drawing.Size(220, 23)
+        Me.PasswordLabel.Size = New System.Drawing.Size(293, 28)
         Me.PasswordLabel.TabIndex = 2
         Me.PasswordLabel.Text = "&Пароль"
         Me.PasswordLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -76,66 +77,71 @@ Partial Class LoginForm1
         'QPyzM_mr4w6Wgf_pHd
         '
         Me.QPyzM_mr4w6Wgf_pHd.BackColor = System.Drawing.Color.Lime
+        Me.QPyzM_mr4w6Wgf_pHd.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.QPyzM_mr4w6Wgf_pHd.ForeColor = System.Drawing.Color.Black
-        Me.QPyzM_mr4w6Wgf_pHd.Location = New System.Drawing.Point(232, 44)
-        Me.QPyzM_mr4w6Wgf_pHd.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.QPyzM_mr4w6Wgf_pHd.MinimumSize = New System.Drawing.Size(220, 22)
+        Me.QPyzM_mr4w6Wgf_pHd.Location = New System.Drawing.Point(309, 54)
+        Me.QPyzM_mr4w6Wgf_pHd.Margin = New System.Windows.Forms.Padding(5)
+        Me.QPyzM_mr4w6Wgf_pHd.MinimumSize = New System.Drawing.Size(292, 22)
         Me.QPyzM_mr4w6Wgf_pHd.Name = "QPyzM_mr4w6Wgf_pHd"
-        Me.QPyzM_mr4w6Wgf_pHd.Size = New System.Drawing.Size(220, 20)
+        Me.QPyzM_mr4w6Wgf_pHd.Size = New System.Drawing.Size(292, 22)
         Me.QPyzM_mr4w6Wgf_pHd.TabIndex = 1
         '
         'n_n9UH_fKQnxRk_E6um
         '
         Me.n_n9UH_fKQnxRk_E6um.BackColor = System.Drawing.Color.Lime
+        Me.n_n9UH_fKQnxRk_E6um.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.n_n9UH_fKQnxRk_E6um.ForeColor = System.Drawing.Color.Black
-        Me.n_n9UH_fKQnxRk_E6um.Location = New System.Drawing.Point(233, 93)
-        Me.n_n9UH_fKQnxRk_E6um.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.n_n9UH_fKQnxRk_E6um.Location = New System.Drawing.Point(311, 114)
+        Me.n_n9UH_fKQnxRk_E6um.Margin = New System.Windows.Forms.Padding(5)
         Me.n_n9UH_fKQnxRk_E6um.Name = "n_n9UH_fKQnxRk_E6um"
         Me.n_n9UH_fKQnxRk_E6um.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.n_n9UH_fKQnxRk_E6um.Size = New System.Drawing.Size(220, 20)
+        Me.n_n9UH_fKQnxRk_E6um.Size = New System.Drawing.Size(292, 22)
         Me.n_n9UH_fKQnxRk_E6um.TabIndex = 3
         '
-        'OK
+        'confirm_button
         '
-        Me.OK.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.OK.ForeColor = System.Drawing.Color.Lime
-        Me.OK.ImageAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.OK.Location = New System.Drawing.Point(290, 175)
-        Me.OK.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.OK.Name = "OK"
-        Me.OK.Size = New System.Drawing.Size(116, 23)
-        Me.OK.TabIndex = 4
-        Me.OK.Text = "&Вход"
-        Me.OK.UseVisualStyleBackColor = False
+        Me.confirm_button.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.confirm_button.FlatAppearance.BorderColor = System.Drawing.Color.Lime
+        Me.confirm_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
+        Me.confirm_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime
+        Me.confirm_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.confirm_button.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.confirm_button.ForeColor = System.Drawing.Color.Lime
+        Me.confirm_button.Location = New System.Drawing.Point(387, 204)
+        Me.confirm_button.Margin = New System.Windows.Forms.Padding(5)
+        Me.confirm_button.Name = "confirm_button"
+        Me.confirm_button.Size = New System.Drawing.Size(155, 39)
+        Me.confirm_button.TabIndex = 4
+        Me.confirm_button.Text = "&Вход"
+        Me.confirm_button.UseVisualStyleBackColor = False
         '
-        'CheckBox2
+        'kL9LT___pwazbX4_5K9m
         '
-        Me.CheckBox2.AutoSize = True
-        Me.CheckBox2.BackColor = System.Drawing.Color.Black
-        Me.CheckBox2.FlatAppearance.BorderColor = System.Drawing.Color.Lime
-        Me.CheckBox2.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black
-        Me.CheckBox2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
-        Me.CheckBox2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
-        Me.CheckBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox2.ForeColor = System.Drawing.Color.Lime
-        Me.CheckBox2.Location = New System.Drawing.Point(233, 117)
-        Me.CheckBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.CheckBox2.Name = "CheckBox2"
-        Me.CheckBox2.Size = New System.Drawing.Size(111, 17)
-        Me.CheckBox2.TabIndex = 6
-        Me.CheckBox2.Text = "Показать пароль"
-        Me.CheckBox2.UseVisualStyleBackColor = False
-        Me.CheckBox2.UseWaitCursor = True
+        Me.kL9LT___pwazbX4_5K9m.AutoSize = True
+        Me.kL9LT___pwazbX4_5K9m.BackColor = System.Drawing.Color.Black
+        Me.kL9LT___pwazbX4_5K9m.FlatAppearance.BorderColor = System.Drawing.Color.Lime
+        Me.kL9LT___pwazbX4_5K9m.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black
+        Me.kL9LT___pwazbX4_5K9m.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.kL9LT___pwazbX4_5K9m.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
+        Me.kL9LT___pwazbX4_5K9m.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.kL9LT___pwazbX4_5K9m.ForeColor = System.Drawing.Color.Lime
+        Me.kL9LT___pwazbX4_5K9m.Location = New System.Drawing.Point(311, 144)
+        Me.kL9LT___pwazbX4_5K9m.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.kL9LT___pwazbX4_5K9m.Name = "kL9LT___pwazbX4_5K9m"
+        Me.kL9LT___pwazbX4_5K9m.Size = New System.Drawing.Size(139, 21)
+        Me.kL9LT___pwazbX4_5K9m.TabIndex = 6
+        Me.kL9LT___pwazbX4_5K9m.Text = "Показать пароль"
+        Me.kL9LT___pwazbX4_5K9m.UseVisualStyleBackColor = False
         '
         'LoginForm1
         '
-        Me.AcceptButton = Me.OK
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AcceptButton = Me.confirm_button
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
-        Me.ClientSize = New System.Drawing.Size(481, 231)
-        Me.Controls.Add(Me.CheckBox2)
-        Me.Controls.Add(Me.OK)
+        Me.ClientSize = New System.Drawing.Size(639, 274)
+        Me.Controls.Add(Me.kL9LT___pwazbX4_5K9m)
+        Me.Controls.Add(Me.confirm_button)
         Me.Controls.Add(Me.n_n9UH_fKQnxRk_E6um)
         Me.Controls.Add(Me.QPyzM_mr4w6Wgf_pHd)
         Me.Controls.Add(Me.PasswordLabel)
@@ -143,19 +149,20 @@ Partial Class LoginForm1
         Me.Controls.Add(Me.LogoPictureBox)
         Me.ForeColor = System.Drawing.Color.Black
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(5)
         Me.MaximizeBox = False
-        Me.MaximumSize = New System.Drawing.Size(497, 270)
+        Me.MaximumSize = New System.Drawing.Size(657, 321)
         Me.MinimizeBox = False
-        Me.MinimumSize = New System.Drawing.Size(497, 270)
+        Me.MinimumSize = New System.Drawing.Size(657, 321)
         Me.Name = "LoginForm1"
         Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
+        Me.Text = "Auth to continue.."
         CType(Me.LogoPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents CheckBox2 As CheckBox
+    Friend WithEvents kL9LT___pwazbX4_5K9m As CheckBox
     Friend WithEvents Timer1 As Timer
 End Class

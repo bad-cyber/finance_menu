@@ -25,8 +25,8 @@ Partial Class Form1
         Me.components = New System.ComponentModel.Container()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.page1 = New System.Windows.Forms.TabPage()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
@@ -80,37 +80,38 @@ Partial Class Form1
         Me.page1.TabIndex = 0
         Me.page1.Text = "Никита"
         '
-        'TextBox1
-        '
-        Me.TextBox1.BackColor = System.Drawing.Color.Lime
-        Me.TextBox1.ForeColor = System.Drawing.Color.Black
-        Me.TextBox1.Location = New System.Drawing.Point(131, 169)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(313, 22)
-        Me.TextBox1.TabIndex = 4
-        '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Mongolian Baiti", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.Lime
-        Me.Label1.Location = New System.Drawing.Point(258, 105)
+        Me.Label1.Location = New System.Drawing.Point(250, 37)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(59, 20)
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "TEXT"
         '
+        'TextBox1
+        '
+        Me.TextBox1.BackColor = System.Drawing.Color.Lime
+        Me.TextBox1.ForeColor = System.Drawing.Color.Black
+        Me.TextBox1.Location = New System.Drawing.Point(151, 139)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBox1.MaxLength = 7
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(274, 22)
+        Me.TextBox1.TabIndex = 4
+        '
         'Button2
         '
         Me.Button2.BackColor = System.Drawing.Color.Black
         Me.Button2.ForeColor = System.Drawing.Color.Lime
-        Me.Button2.Location = New System.Drawing.Point(9, 165)
+        Me.Button2.Location = New System.Drawing.Point(19, 131)
         Me.Button2.Margin = New System.Windows.Forms.Padding(4)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(113, 28)
+        Me.Button2.Size = New System.Drawing.Size(113, 39)
         Me.Button2.TabIndex = 1
         Me.Button2.Text = "Вернул"
         Me.Button2.UseVisualStyleBackColor = False
@@ -119,10 +120,10 @@ Partial Class Form1
         '
         Me.Button1.BackColor = System.Drawing.Color.Black
         Me.Button1.ForeColor = System.Drawing.Color.Lime
-        Me.Button1.Location = New System.Drawing.Point(453, 165)
+        Me.Button1.Location = New System.Drawing.Point(448, 131)
         Me.Button1.Margin = New System.Windows.Forms.Padding(4)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(115, 28)
+        Me.Button1.Size = New System.Drawing.Size(115, 39)
         Me.Button1.TabIndex = 0
         Me.Button1.Text = "Взял"
         Me.Button1.UseVisualStyleBackColor = False
@@ -131,11 +132,11 @@ Partial Class Form1
         '
         Me.ProgressBar1.BackColor = System.Drawing.Color.Lime
         Me.ProgressBar1.ForeColor = System.Drawing.Color.Black
-        Me.ProgressBar1.Location = New System.Drawing.Point(0, 129)
+        Me.ProgressBar1.Location = New System.Drawing.Point(19, 74)
         Me.ProgressBar1.Margin = New System.Windows.Forms.Padding(4)
         Me.ProgressBar1.Maximum = 1
         Me.ProgressBar1.Name = "ProgressBar1"
-        Me.ProgressBar1.Size = New System.Drawing.Size(585, 28)
+        Me.ProgressBar1.Size = New System.Drawing.Size(544, 17)
         Me.ProgressBar1.TabIndex = 2
         '
         'page2

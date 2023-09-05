@@ -12,9 +12,9 @@ Public Class LoginForm1
     '1.1. --> Введение улучшенной проверки(принимаем данные -> прогоняем через шифрование, расшифровываем данные из самой программы, сравниваем их. +: Вход ; -: Ошибка №70
     '
 
-    Private Sub OK_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OK.Click
+    Private Sub OK_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles confirm_button.Click
         If QPyzM_mr4w6Wgf_pHd.Text = My.Settings.rt_6M6A__PMP8G_Es2cT And n_n9UH_fKQnxRk_E6um.Text = My.Settings.w_4HD_w5Fqkv6ref_Kq Then 'Если login и password удовлетворяют условиям, то...
-            OK.Text = "&Инициализация.."
+            confirm_button.Text = "&Инициализация.."
             Me.Visible = False
             Form1.Visible = True
         ElseIf QPyzM_mr4w6Wgf_pHd.Text = "" Or n_n9UH_fKQnxRk_E6um.Text = "" Then
@@ -50,7 +50,25 @@ Public Class LoginForm1
 
     End Sub
 
-    Private Sub CheckBox2_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox2.CheckedChanged
+    Private Sub kL9LT___pwazbX4_5K9m_CheckedChanged(sender As Object, e As EventArgs) Handles kL9LT___pwazbX4_5K9m.CheckedChanged
+        If kL9LT___pwazbX4_5K9m.Checked = True Then
+            n_n9UH_fKQnxRk_E6um.PasswordChar = ""
+        Else
+            n_n9UH_fKQnxRk_E6um.PasswordChar = "*"
+        End If
+    End Sub
 
+    Private Sub OK_MouseMove(sender As Object, e As MouseEventArgs) Handles confirm_button.MouseMove
+        confirm_button.ForeColor = Color.Black
+        confirm_button.FlatAppearance.BorderColor = Color.Black
+    End Sub
+
+    Private Sub OK_MouseUp(sender As Object, e As MouseEventArgs) Handles confirm_button.MouseUp
+        'OK.ForeColor = Color.Green
+    End Sub
+
+    Private Sub OK_MouseLeave(sender As Object, e As EventArgs) Handles confirm_button.MouseLeave
+        confirm_button.ForeColor = Color.Lime
+        confirm_button.FlatAppearance.BorderColor = Color.Lime
     End Sub
 End Class
