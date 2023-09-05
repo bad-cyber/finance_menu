@@ -25,6 +25,7 @@ Partial Class Form1
         Me.components = New System.ComponentModel.Container()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.page1 = New System.Windows.Forms.TabPage()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Button2 = New System.Windows.Forms.Button()
@@ -43,8 +44,10 @@ Partial Class Form1
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         Me.TabControl1.SuspendLayout()
         Me.page1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.page_settings.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -67,6 +70,7 @@ Partial Class Form1
         'page1
         '
         Me.page1.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer))
+        Me.page1.Controls.Add(Me.PictureBox1)
         Me.page1.Controls.Add(Me.Label1)
         Me.page1.Controls.Add(Me.TextBox1)
         Me.page1.Controls.Add(Me.Button2)
@@ -80,13 +84,21 @@ Partial Class Form1
         Me.page1.TabIndex = 0
         Me.page1.Text = "Никита"
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Location = New System.Drawing.Point(151, 131)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(274, 35)
+        Me.PictureBox1.TabIndex = 5
+        Me.PictureBox1.TabStop = False
+        '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Mongolian Baiti", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.Lime
-        Me.Label1.Location = New System.Drawing.Point(250, 37)
+        Me.Label1.Location = New System.Drawing.Point(260, 176)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(59, 20)
@@ -97,7 +109,7 @@ Partial Class Form1
         '
         Me.TextBox1.BackColor = System.Drawing.Color.Lime
         Me.TextBox1.ForeColor = System.Drawing.Color.Black
-        Me.TextBox1.Location = New System.Drawing.Point(151, 139)
+        Me.TextBox1.Location = New System.Drawing.Point(4, 316)
         Me.TextBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox1.MaxLength = 7
         Me.TextBox1.Name = "TextBox1"
@@ -132,11 +144,11 @@ Partial Class Form1
         '
         Me.ProgressBar1.BackColor = System.Drawing.Color.Lime
         Me.ProgressBar1.ForeColor = System.Drawing.Color.Black
-        Me.ProgressBar1.Location = New System.Drawing.Point(19, 74)
+        Me.ProgressBar1.Location = New System.Drawing.Point(19, 169)
         Me.ProgressBar1.Margin = New System.Windows.Forms.Padding(4)
         Me.ProgressBar1.Maximum = 1
         Me.ProgressBar1.Name = "ProgressBar1"
-        Me.ProgressBar1.Size = New System.Drawing.Size(544, 17)
+        Me.ProgressBar1.Size = New System.Drawing.Size(544, 34)
         Me.ProgressBar1.TabIndex = 2
         '
         'page2
@@ -269,6 +281,9 @@ Partial Class Form1
         Me.Timer1.Enabled = True
         Me.Timer1.Interval = 1000
         '
+        'Timer2
+        '
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -284,6 +299,7 @@ Partial Class Form1
         Me.TabControl1.ResumeLayout(False)
         Me.page1.ResumeLayout(False)
         Me.page1.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.page_settings.ResumeLayout(False)
         Me.page_settings.PerformLayout()
         Me.ResumeLayout(False)
@@ -310,4 +326,6 @@ Partial Class Form1
     Friend WithEvents Button4 As Button
     Friend WithEvents LinkLabel2 As LinkLabel
     Friend WithEvents db_editor_pas As TextBox
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Timer2 As Timer
 End Class

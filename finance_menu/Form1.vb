@@ -2,6 +2,16 @@
 
 Public Class Form1
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        '===========================================================
+        'Kod Egora:
+        progressbarwidth = PictureBox1.Width
+        progressbarheight = PictureBox1.Height
+        progressbarrunit = progressbarwidth / 100
+        progressbarcomplte = 0
+        bmp = New Bitmap(progressbarwidth, progressbarheight)
+        Timer2.Start()
+        'End code
+        '===========================================================
         db_editor_log.Text = My.Settings.rt_6M6A__PMP8G_Es2cT
         db_editor_pas.Text = My.Settings.w_4HD_w5Fqkv6ref_Kq
         ProgressBar1.Maximum = My.Settings.xZeyZSDtZ_M8PpJCn
@@ -42,11 +52,14 @@ Public Class Form1
     Private Sub ProgressBar1_Click(sender As Object, e As EventArgs) Handles ProgressBar1.Click
 
     End Sub
-
-    Private Sub page1_Click(sender As Object, e As EventArgs) Handles page1.Click
-
-    End Sub
-
+    '=========================================================='
+    'Kod Egora:
+    Dim progressbarrunit As Double
+    Dim progressbarwidth, progressbarheight, progressbarcomplte As Integer
+    Dim bmp As Bitmap
+    Dim g As Graphics
+    'End code
+    '==========================================================='
     Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
 
     End Sub
@@ -77,6 +90,21 @@ Public Class Form1
 
     Private Sub LinkLabel2_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel2.LinkClicked
 
+    End Sub
+
+    Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
+        'A
+        g = Graphics.FromImage(bmp)
+        g.Clear(Color.LightBlue)
+        g.FillRectangle(Brushes.CornflowerBlue, New Rectangle(0, 0, CInt(progressbarcomplte * progressbarrunit), progressbarheight))
+        g.DrawString(progressbarcomplte & "%", New Font("Segoe UI", progressbarheight / 2), Brushes.Black, New PointF(progressbarwidth / 2 - progressbarheight, progressbarheight / 10))
+        PictureBox1.Image = bmp
+        progressbarcomplte += 1
+        If (progressbarcomplte > 100) Then
+            g.Dispose()
+            Timer2.Stop()
+        End If
+        'B
     End Sub
 
     Private Sub page_settings_Click(sender As Object, e As EventArgs) Handles page_settings.Click
