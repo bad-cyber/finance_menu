@@ -51,6 +51,10 @@ Public Class Form1
 
     End Sub
 
+    Private Sub TextBox1_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles TextBox1.KeyPress
+        If Not Char.IsDigit(e.KeyChar) Then e.Handled = True
+    End Sub
+
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
 
     End Sub
