@@ -13,16 +13,16 @@ Public Class LoginForm1
     '
 
     Private Sub OK_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OK.Click
-        If QPyzM_mr4w6Wgf_pHd.Text = My.Settings.rt_6M6A__PMP8G_Es2cT And PasswordTextBox.Text = My.Settings.w_4HD_w5Fqkv6ref_Kq Then 'Если login и password удовлетворяют условиям, то...
+        If QPyzM_mr4w6Wgf_pHd.Text = My.Settings.rt_6M6A__PMP8G_Es2cT And n_n9UH_fKQnxRk_E6um.Text = My.Settings.w_4HD_w5Fqkv6ref_Kq Then 'Если login и password удовлетворяют условиям, то...
             OK.Text = "&Инициализация.."
             Me.Visible = False
             Form1.Visible = True
-        ElseIf QPyzM_mr4w6Wgf_pHd.Text = "" Or PasswordTextBox.Text = "" Then
+        ElseIf QPyzM_mr4w6Wgf_pHd.Text = "" Or n_n9UH_fKQnxRk_E6um.Text = "" Then
             MsgBox("Внимание! Пустые строки не являются переменными! Введите необходимые данные и повторите попытку.", MsgBoxStyle.Critical, "Ошибка №63!") : Exit Sub
-        ElseIf QPyzM_mr4w6Wgf_pHd.Text IsNot My.Settings.rt_6M6A__PMP8G_Es2cT Or PasswordTextBox.Text IsNot My.Settings.w_4HD_w5Fqkv6ref_Kq Then
+        ElseIf QPyzM_mr4w6Wgf_pHd.Text IsNot My.Settings.rt_6M6A__PMP8G_Es2cT Or n_n9UH_fKQnxRk_E6um.Text IsNot My.Settings.w_4HD_w5Fqkv6ref_Kq Then
             MsgBox("Внимание! Данные не найдены в базе данных. Пожалуйста проверьте подключение к интернету и повторите попытку.", MsgBoxStyle.Critical, "Ошибка №70!")
             QPyzM_mr4w6Wgf_pHd.Clear()
-            PasswordTextBox.Clear()
+            n_n9UH_fKQnxRk_E6um.Clear()
         End If 'Базовая проверка на правильность введённых данных
     End Sub
 
@@ -34,7 +34,7 @@ Public Class LoginForm1
 
     End Sub
 
-    Private Sub PasswordTextBox_TextChanged(sender As Object, e As EventArgs) Handles PasswordTextBox.TextChanged
+    Private Sub PasswordTextBox_TextChanged(sender As Object, e As EventArgs) Handles n_n9UH_fKQnxRk_E6um.TextChanged
 
     End Sub
 
