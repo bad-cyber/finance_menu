@@ -25,8 +25,8 @@ Partial Class Form1
         Me.components = New System.ComponentModel.Container()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.page1 = New System.Windows.Forms.TabPage()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
@@ -44,6 +44,7 @@ Partial Class Form1
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
+        Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
         Me.TabControl1.SuspendLayout()
         Me.page1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -68,6 +69,7 @@ Partial Class Form1
         'page1
         '
         Me.page1.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer))
+        Me.page1.Controls.Add(Me.ProgressBar1)
         Me.page1.Controls.Add(Me.Label1)
         Me.page1.Controls.Add(Me.PictureBox1)
         Me.page1.Controls.Add(Me.TextBox1)
@@ -75,19 +77,10 @@ Partial Class Form1
         Me.page1.Controls.Add(Me.Button1)
         Me.page1.Location = New System.Drawing.Point(4, 22)
         Me.page1.Name = "page1"
-        Me.page1.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+        Me.page1.Padding = New System.Windows.Forms.Padding(3)
         Me.page1.Size = New System.Drawing.Size(439, 331)
         Me.page1.TabIndex = 0
         Me.page1.Text = "Никита"
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Location = New System.Drawing.Point(14, 138)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(408, 28)
-        Me.PictureBox1.TabIndex = 5
-        Me.PictureBox1.TabStop = False
         '
         'Label1
         '
@@ -100,6 +93,15 @@ Partial Class Form1
         Me.Label1.Size = New System.Drawing.Size(46, 16)
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "TEXT"
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Location = New System.Drawing.Point(14, 138)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(408, 28)
+        Me.PictureBox1.TabIndex = 5
+        Me.PictureBox1.TabStop = False
         '
         'TextBox1
         '
@@ -137,7 +139,7 @@ Partial Class Form1
         '
         Me.page2.Location = New System.Drawing.Point(4, 22)
         Me.page2.Name = "page2"
-        Me.page2.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+        Me.page2.Padding = New System.Windows.Forms.Padding(3)
         Me.page2.Size = New System.Drawing.Size(439, 331)
         Me.page2.TabIndex = 1
         Me.page2.Text = "Александр"
@@ -254,6 +256,15 @@ Partial Class Form1
         'Timer2
         '
         '
+        'ProgressBar1
+        '
+        Me.ProgressBar1.Location = New System.Drawing.Point(99, 96)
+        Me.ProgressBar1.Maximum = 1
+        Me.ProgressBar1.Name = "ProgressBar1"
+        Me.ProgressBar1.Size = New System.Drawing.Size(231, 23)
+        Me.ProgressBar1.Step = 1
+        Me.ProgressBar1.TabIndex = 6
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -296,4 +307,5 @@ Partial Class Form1
     Friend WithEvents db_editor_pas As TextBox
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Timer2 As Timer
+    Friend WithEvents ProgressBar1 As ProgressBar
 End Class
