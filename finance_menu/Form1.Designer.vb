@@ -109,7 +109,7 @@ Partial Class Form1
         '
         Me.TextBox1.BackColor = System.Drawing.Color.Lime
         Me.TextBox1.ForeColor = System.Drawing.Color.Black
-        Me.TextBox1.Location = New System.Drawing.Point(4, 316)
+        Me.TextBox1.Location = New System.Drawing.Point(151, 211)
         Me.TextBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox1.MaxLength = 7
         Me.TextBox1.Name = "TextBox1"

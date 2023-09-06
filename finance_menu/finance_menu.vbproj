@@ -154,9 +154,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\19. Самолеты.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\TextFile1.txt" />
   </ItemGroup>
   <ItemGroup>
@@ -170,9 +167,6 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Без имени-1.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Picsart_23-09-04_16-44-14-541.jpg" />

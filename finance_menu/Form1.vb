@@ -100,6 +100,11 @@ Public Class Form1
 
     Private Sub LinkLabel2_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel2.LinkClicked
     End Sub
+
+    Private Sub page1_Click(sender As Object, e As EventArgs) Handles page1.Click
+
+    End Sub
+
     Private Sub ProgressBar1_Click(sender As Object, e As EventArgs) Handles ProgressBar1.Click
     End Sub
 
