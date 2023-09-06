@@ -4,7 +4,7 @@ Public Class Form1
     '=========================================================='
     'Custom ProgressBar:
     Dim progressbarrunit As Double
-    Dim progressbarwidth, progressbarheight, progressbarcomplte As Integer
+    Dim progressbarwidth, progressbarheight, pbjob, pbstatus As Integer
     Dim bmp As Bitmap
     Dim g As Graphics
     'End code
@@ -16,19 +16,34 @@ Public Class Form1
         progressbarheight = PictureBox1.Height
         progressbarrunit = progressbarwidth / 100
         'progressbarrunit = progressbarwidth / My.Settings.xZeyZSDtZ_M8PpJCn
-        progressbarcomplte = 0
+        pbjob = My.Settings.xZeyZSDtZ_M8PpJCn
         bmp = New Bitmap(progressbarwidth, progressbarheight)
         Timer2.Start()
         'End code
         '===========================================================
         db_editor_log.Text = My.Settings.rt_6M6A__PMP8G_Es2cT
         db_editor_pas.Text = My.Settings.w_4HD_w5Fqkv6ref_Kq
-        ProgressBar1.Maximum = My.Settings.xZeyZSDtZ_M8PpJCn
+        'ProgressBar1.Maximum = My.Settings.xZeyZSDtZ_M8PpJCn
     End Sub
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
-        Label1.Text = ProgressBar1.Maximum - ProgressBar1.Value
+        'Label1.Text = ProgressBar1.Maximum - ProgressBar1.Value
     End Sub
-
+    Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
+        'A
+        g = Graphics.FromImage(bmp)
+        g.Clear(Color.Gray)
+        g.FillRectangle(Brushes.LimeGreen, New Rectangle(0, 0, CInt(pbjob * progressbarrunit), progressbarheight))
+#Disable Warning BC42016 ' Неявное преобразование
+        g.DrawString(pbjob & " руб.", New Font("Segoe UI", progressbarheight / 2), Brushes.Black, New PointF(progressbarwidth / 2 - progressbarheight, progressbarheight / 10))
+#Enable Warning BC42016 ' Неявное преобразование
+        PictureBox1.Image = bmp
+        pbjob += 1
+        If (pbjob > 100) Then
+            g.Dispose()
+            Timer2.Stop()
+        End If
+        'B
+    End Sub
     Private Sub Aa1_Click(sender As Object, e As EventArgs) Handles Button2.Click
         If TextBox1.Text = "" Then
             MsgBox("Внимание! Пустые строки не являются переменными! Введите необходимые данные и повторите попытку.", MsgBoxStyle.Critical, "Ошибка №63!") : Exit Sub
@@ -62,21 +77,6 @@ Public Class Form1
         'If Not Char.IsDigit(e.KeyChar) Then e.Handled = True 'Проверка на вшивость
     End Sub
 
-    Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
-        'A
-        g = Graphics.FromImage(bmp)
-        g.Clear(Color.Gray)
-        g.FillRectangle(Brushes.LimeGreen, New Rectangle(0, 0, CInt(progressbarcomplte * progressbarrunit), progressbarheight))
-        g.DrawString(progressbarcomplte & " руб.", New Font("Segoe UI", progressbarheight / 2), Brushes.Black, New PointF(progressbarwidth / 2 - progressbarheight, progressbarheight / 10))
-        PictureBox1.Image = bmp
-        progressbarcomplte += 1
-        If (progressbarcomplte > 100) Then
-            g.Dispose()
-            Timer2.Stop()
-        End If
-        'B
-    End Sub
-
     Private Sub page_settings_Click(sender As Object, e As EventArgs) Handles page_settings.Click
     End Sub
 
@@ -102,10 +102,9 @@ Public Class Form1
     End Sub
 
     Private Sub page1_Click(sender As Object, e As EventArgs) Handles page1.Click
-
     End Sub
 
-    Private Sub ProgressBar1_Click(sender As Object, e As EventArgs) Handles ProgressBar1.Click
+    Private Sub ProgressBar1_Click(sender As Object, e As EventArgs)
     End Sub
 
     Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged

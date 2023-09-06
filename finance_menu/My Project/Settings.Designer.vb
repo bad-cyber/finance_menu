@@ -78,7 +78,11 @@ Namespace My
             End Set
         End Property
         
+        '''<summary>
+        '''user1
+        '''</summary>
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Configuration.SettingsDescriptionAttribute("user1"),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property xZeyZSDtZ_M8PpJCn() As Integer
@@ -90,7 +94,11 @@ Namespace My
             End Set
         End Property
         
+        '''<summary>
+        '''user2
+        '''</summary>
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Configuration.SettingsDescriptionAttribute("user2"),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property y6X6eyNr_ZGNgPK2M() As Integer
@@ -102,7 +110,11 @@ Namespace My
             End Set
         End Property
         
+        '''<summary>
+        '''user3
+        '''</summary>
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Configuration.SettingsDescriptionAttribute("user3"),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property W84Ammg_gcy__LhxKja() As Integer
@@ -114,7 +126,11 @@ Namespace My
             End Set
         End Property
         
+        '''<summary>
+        '''user4
+        '''</summary>
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Configuration.SettingsDescriptionAttribute("user4"),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property JVJtJ4z_A9V3FnwmS() As Integer
@@ -126,7 +142,11 @@ Namespace My
             End Set
         End Property
         
+        '''<summary>
+        '''user5
+        '''</summary>
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Configuration.SettingsDescriptionAttribute("user5"),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property y7pZ9AWbPxx_Cy_28X() As Integer
@@ -138,7 +158,11 @@ Namespace My
             End Set
         End Property
         
+        '''<summary>
+        '''user6
+        '''</summary>
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Configuration.SettingsDescriptionAttribute("user6"),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property xcwsG_2Pga_sEtwzcj() As Integer
@@ -147,6 +171,78 @@ Namespace My
             End Get
             Set
                 Me("xcwsG_2Pga_sEtwzcj") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property name1() As String
+            Get
+                Return CType(Me("name1"),String)
+            End Get
+            Set
+                Me("name1") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property name2() As String
+            Get
+                Return CType(Me("name2"),String)
+            End Get
+            Set
+                Me("name2") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property name3() As String
+            Get
+                Return CType(Me("name3"),String)
+            End Get
+            Set
+                Me("name3") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property name4() As String
+            Get
+                Return CType(Me("name4"),String)
+            End Get
+            Set
+                Me("name4") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property name5() As String
+            Get
+                Return CType(Me("name5"),String)
+            End Get
+            Set
+                Me("name5") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property name6() As String
+            Get
+                Return CType(Me("name6"),String)
+            End Get
+            Set
+                Me("name6") = value
             End Set
         End Property
     End Class

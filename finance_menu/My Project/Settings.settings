@@ -8,23 +8,41 @@
     <Setting Name="w_4HD_w5Fqkv6ref_Kq" Type="System.String" Scope="User">
       <Value Profile="(Default)">admin</Value>
     </Setting>
-    <Setting Name="xZeyZSDtZ_M8PpJCn" Type="System.Int32" Scope="User">
+    <Setting Name="xZeyZSDtZ_M8PpJCn" Description="user1" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="y6X6eyNr_ZGNgPK2M" Type="System.Int32" Scope="User">
+    <Setting Name="y6X6eyNr_ZGNgPK2M" Description="user2" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="W84Ammg_gcy__LhxKja" Type="System.Int32" Scope="User">
+    <Setting Name="W84Ammg_gcy__LhxKja" Description="user3" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="JVJtJ4z_A9V3FnwmS" Type="System.Int32" Scope="User">
+    <Setting Name="JVJtJ4z_A9V3FnwmS" Description="user4" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="y7pZ9AWbPxx_Cy_28X" Type="System.Int32" Scope="User">
+    <Setting Name="y7pZ9AWbPxx_Cy_28X" Description="user5" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="xcwsG_2Pga_sEtwzcj" Type="System.Int32" Scope="User">
+    <Setting Name="xcwsG_2Pga_sEtwzcj" Description="user6" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="name1" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="name2" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="name3" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="name4" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="name5" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="name6" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
     </Setting>
   </Settings>
 </SettingsFile>
