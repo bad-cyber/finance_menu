@@ -1,67 +1,47 @@
 ﻿Imports System.ComponentModel
 
 Public Class Form1
-    '=========================================================='
-    'Custom ProgressBar:
-    Dim progressbarrunit As Double
-    Dim progressbarwidth, progressbarheight, pbjob, pbstatus As Integer
-    Dim bmp As Bitmap
-    Dim g As Graphics
-    'End code
-    '==========================================================='
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        '===========================================================
-        'Kod Egora:
-        progressbarwidth = PictureBox1.Width
-        progressbarheight = PictureBox1.Height
-        progressbarrunit = progressbarwidth / 100
-        'progressbarrunit = progressbarwidth / My.Settings.xZeyZSDtZ_M8PpJCn
-        pbjob = My.Settings.xZeyZSDtZ_M8PpJCn
-        bmp = New Bitmap(progressbarwidth, progressbarheight)
-        Timer2.Start()
-        'End code
-        '===========================================================
+    Private Const V_rub As String = " руб."
+    Private Sub Loading_set()
         db_editor_log.Text = My.Settings.rt_6M6A__PMP8G_Es2cT
         db_editor_pas.Text = My.Settings.w_4HD_w5Fqkv6ref_Kq
-        ProgressBar1.Maximum = My.Settings.xZeyZSDtZ_M8PpJCn
+        ProgressBar1.Maximum = My.Settings.xZeyZSDtZ_M8PpJCn 'user1
+        ProgressBar2.Maximum = My.Settings.y6X6eyNr_ZGNgPK2M 'user2
+        ProgressBar3.Maximum = My.Settings.W84Ammg_gcy__LhxKja 'user3
+        ProgressBar4.Maximum = My.Settings.JVJtJ4z_A9V3FnwmS 'user4
+    End Sub
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Loading_set()
+    End Sub
+    Private Shared Sub Critical()
+        MsgBox("Внимание! Пустые строки не являются переменными! Введите необходимые данные и повторите попытку.", MsgBoxStyle.Critical, "Ошибка №63!")
+    End Sub
+    Private Shared Sub Er_message()
+        MsgBox("Данное окно на этапе разработки*", MsgBoxStyle.Information, "Ошибка №404!")
     End Sub
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
-        Label1.Text = ProgressBar1.Maximum - ProgressBar1.Value
+        Label1.Text = CStr(ProgressBar1.Maximum - ProgressBar1.Value) + V_rub
+        Label2.Text = CStr(ProgressBar2.Maximum - ProgressBar2.Value) + V_rub
+        Label3.Text = CStr(ProgressBar3.Maximum - ProgressBar3.Value) + V_rub
+        Label4.Text = CStr(ProgressBar4.Maximum - ProgressBar4.Value) + V_rub
     End Sub
-    Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
-        'A
-        g = Graphics.FromImage(bmp)
-        g.Clear(Color.Gray)
-        g.FillRectangle(Brushes.LimeGreen, New Rectangle(0, 0, CInt(pbjob * progressbarrunit), progressbarheight))
-#Disable Warning BC42016 ' Неявное преобразование
-        g.DrawString(pbjob & " руб.", New Font("Segoe UI", progressbarheight / 2), Brushes.Black, New PointF(progressbarwidth / 2 - progressbarheight, progressbarheight / 10))
-#Enable Warning BC42016 ' Неявное преобразование
-        PictureBox1.Image = bmp
-        pbjob += 1
-        If (pbjob > 100) Then
-            g.Dispose()
-            Timer2.Stop()
-        End If
-        'B
-    End Sub
-    Private Sub Aa1_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub Aa1_Click(sender As Object, e As EventArgs) Handles bb1.Click
         If TextBox1.Text = "" Then
-            MsgBox("Внимание! Пустые строки не являются переменными! Введите необходимые данные и повторите попытку.", MsgBoxStyle.Critical, "Ошибка №63!") : Exit Sub
+            Critical() : Exit Sub
         Else
-            ProgressBar1.Value += TextBox1.Text 'Изменение значения у progressbar'а
-            Label1.Text = ProgressBar1.Maximum 'Принятие данных надписью "MONEY"
+            ProgressBar1.Value += CInt(TextBox1.Text) 'Изменение значения у progressbar'а
+            Label1.Text = CStr(ProgressBar1.Maximum) 'Принятие данных надписью "MONEY"
             My.Settings.xZeyZSDtZ_M8PpJCn = ProgressBar1.Maximum 'Присвоение показателя в фиксированную настройку
             My.Settings.Upgrade() 'Дубль сохранения данных
             My.Settings.Save() 'Дубль сохранения данных
         End If
     End Sub
-
-    Private Sub Bb2_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Bb2_Click(sender As Object, e As EventArgs) Handles bb2.Click
         If TextBox1.Text = "" Then
-            MsgBox("Внимание! Пустые строки не являются переменными! Введите необходимые данные и повторите попытку.", MsgBoxStyle.Critical, "Ошибка №63!") : Exit Sub
+            Critical() : Exit Sub
         Else
-            ProgressBar1.Maximum += TextBox1.Text 'Изменение значения у progressbar'а
-            Label1.Text = ProgressBar1.Maximum 'Принятие данных надписью "MONEY"
+            ProgressBar1.Maximum += CInt(TextBox1.Text) 'Изменение значения у progressbar'а
+            Label1.Text = CStr(ProgressBar1.Maximum) 'Принятие данных надписью "MONEY"
             My.Settings.xZeyZSDtZ_M8PpJCn = ProgressBar1.Maximum 'Присвоение показателя в фиксированную настройку
             My.Settings.Upgrade() 'Дубль сохранения данных
             My.Settings.Save() 'Дубль сохранения данных
@@ -72,41 +52,90 @@ Public Class Form1
         My.Settings.Save() 'Дубль сохранения данных
         LoginForm1.Close() 'Костыль на выключение при закрытии первого окна
     End Sub
-
-    Private Sub TextBox1_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles TextBox1.KeyPress
-        'If Not Char.IsDigit(e.KeyChar) Then e.Handled = True 'Проверка на вшивость
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click 'change log/pass
+        If db_editor_log.Text = "" Or db_editor_pas.Text = "" Then
+            Critical() : Exit Sub
+        Else
+            My.Settings.rt_6M6A__PMP8G_Es2cT = db_editor_log.Text
+            My.Settings.w_4HD_w5Fqkv6ref_Kq = db_editor_pas.Text
+            MsgBox("Логин или пароль успешно изменены. |                         Логин: " + My.Settings.rt_6M6A__PMP8G_Es2cT + "; Пароль: " + My.Settings.w_4HD_w5Fqkv6ref_Kq, MsgBoxStyle.Information, "finance_menu")
+        End If
     End Sub
-
-    Private Sub page_settings_Click(sender As Object, e As EventArgs) Handles page_settings.Click
-    End Sub
-
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
-    End Sub
-
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-    End Sub
-
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        'exit
+        My.Settings.Save() 'Дубль сохранения данных
+        LoginForm1.Close() 'Костыль на выключение при закрытии первого окна
     End Sub
-
-    Private Sub db_editor_log_TextChanged(sender As Object, e As EventArgs) Handles db_editor_log.TextChanged
+    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
+        Er_message() : Exit Sub
     End Sub
-
-    Private Sub db_editor_pas_TextChanged(sender As Object, e As EventArgs) Handles db_editor_pas.TextChanged
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+        Er_message() : Exit Sub
     End Sub
-
-    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
+    Private Sub bb3_Click(sender As Object, e As EventArgs) Handles bb3.Click
+        If TextBox2.Text = "" Then
+            Critical() : Exit Sub
+        Else
+            ProgressBar2.Value += CInt(TextBox2.Text) 'Изменение значения у progressbar'а
+            Label2.Text = CStr(ProgressBar2.Maximum) 'Принятие данных надписью "MONEY"
+            My.Settings.y6X6eyNr_ZGNgPK2M = ProgressBar2.Maximum 'Присвоение показателя в фиксированную настройку
+            My.Settings.Upgrade() 'Дубль сохранения данных
+            My.Settings.Save() 'Дубль сохранения данных
+        End If
     End Sub
-
-    Private Sub LinkLabel2_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel2.LinkClicked
+    Private Sub bb4_Click(sender As Object, e As EventArgs) Handles bb4.Click
+        If TextBox2.Text = "" Then
+            Critical() : Exit Sub
+        Else
+            ProgressBar2.Maximum += CInt(TextBox2.Text) 'Изменение значения у progressbar'а
+            Label2.Text = CStr(ProgressBar2.Maximum) 'Принятие данных надписью "MONEY"
+            My.Settings.y6X6eyNr_ZGNgPK2M = ProgressBar2.Maximum 'Присвоение показателя в фиксированную настройку
+            My.Settings.Upgrade() 'Дубль сохранения данных
+            My.Settings.Save() 'Дубль сохранения данных
+        End If
     End Sub
-
-    Private Sub page1_Click(sender As Object, e As EventArgs) Handles page1.Click
+    Private Sub bb5_Click(sender As Object, e As EventArgs) Handles bb5.Click '3
+        If TextBox3.Text = "" Then
+            Critical() : Exit Sub
+        Else
+            ProgressBar3.Value += CInt(TextBox3.Text) 'Изменение значения у progressbar'а
+            Label3.Text = CStr(ProgressBar3.Maximum) 'Принятие данных надписью "MONEY"
+            My.Settings.W84Ammg_gcy__LhxKja = ProgressBar3.Maximum 'Присвоение показателя в фиксированную настройку
+            My.Settings.Upgrade() 'Дубль сохранения данных
+            My.Settings.Save() 'Дубль сохранения данных
+        End If
     End Sub
-
-    Private Sub ProgressBar1_Click(sender As Object, e As EventArgs)
+    Private Sub bb6_Click(sender As Object, e As EventArgs) Handles bb6.Click '3
+        If TextBox3.Text = "" Then
+            Critical() : Exit Sub
+        Else
+            ProgressBar3.Maximum += CInt(TextBox3.Text) 'Изменение значения у progressbar'а
+            Label3.Text = CStr(ProgressBar3.Maximum) 'Принятие данных надписью "MONEY"
+            My.Settings.W84Ammg_gcy__LhxKja = ProgressBar3.Maximum 'Присвоение показателя в фиксированную настройку
+            My.Settings.Upgrade() 'Дубль сохранения данных
+            My.Settings.Save() 'Дубль сохранения данных
+        End If
     End Sub
-
-    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
+    Private Sub bb7_Click(sender As Object, e As EventArgs) Handles bb7.Click '4
+        If TextBox4.Text = "" Then
+            Critical() : Exit Sub
+        Else
+            ProgressBar4.Value += CInt(TextBox4.Text) 'Изменение значения у progressbar'а
+            Label4.Text = CStr(ProgressBar4.Maximum) 'Принятие данных надписью "MONEY"
+            My.Settings.JVJtJ4z_A9V3FnwmS = ProgressBar4.Maximum 'Присвоение показателя в фиксированную настройку
+            My.Settings.Upgrade() 'Дубль сохранения данных
+            My.Settings.Save() 'Дубль сохранения данных
+        End If
+    End Sub
+    Private Sub bb8_Click(sender As Object, e As EventArgs) Handles bb8.Click '4
+        If TextBox4.Text = "" Then
+            Critical() : Exit Sub
+        Else
+            ProgressBar4.Maximum += CInt(TextBox4.Text) 'Изменение значения у progressbar'а
+            Label4.Text = CStr(ProgressBar4.Maximum) 'Принятие данных надписью "MONEY"
+            My.Settings.JVJtJ4z_A9V3FnwmS = ProgressBar4.Maximum 'Присвоение показателя в фиксированную настройку
+            My.Settings.Upgrade() 'Дубль сохранения данных
+            My.Settings.Save() 'Дубль сохранения данных
+        End If
     End Sub
 End Class

@@ -63,6 +63,17 @@ Namespace My.Resources
         '''<summary>
         '''  Поиск локализованного ресурса типа System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property kisspng_strategic_planning_strategy_product_debriefing_5bff0905db8926_4163649115434406458992() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("kisspng-strategic-planning-strategy-product-debriefing-5bff0905db8926.41636491154"& _ 
+                        "34406458992", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property lpi() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("lpi", resourceCulture)

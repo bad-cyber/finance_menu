@@ -20,10 +20,10 @@
     <Setting Name="JVJtJ4z_A9V3FnwmS" Description="user4" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="y7pZ9AWbPxx_Cy_28X" Description="user5" Type="System.Int32" Scope="User">
+    <Setting Name="y7pZ9AWbPxx_Cy_28X" Description="user5.inactive" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="xcwsG_2Pga_sEtwzcj" Description="user6" Type="System.Int32" Scope="User">
+    <Setting Name="xcwsG_2Pga_sEtwzcj" Description="user6.inactive" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
     <Setting Name="name1" Type="System.String" Scope="User">

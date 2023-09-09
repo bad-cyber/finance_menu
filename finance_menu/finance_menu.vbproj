@@ -69,6 +69,21 @@
   <PropertyGroup>
     <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
   </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>0DB71E8022B0C90EE8417D9FB59FBA05B9251017</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>finance_menu_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Release1.0.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>free-icon-font-settings-3917110.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -142,6 +157,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="finance_menu_TemporaryKey.pfx" />
     <None Include="My Project\app.manifest" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
@@ -166,9 +182,16 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
+    <None Include="Resources\kisspng-strategic-planning-strategy-product-debriefing-5bff0905db8926.4163649115434406458992.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Release1.0.pfx" />
     <None Include="Resources\login_page_image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="free-icon-font-settings-3917035.ico" />
+    <Content Include="free-icon-font-settings-3917110.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

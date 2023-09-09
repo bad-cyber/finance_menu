@@ -143,10 +143,10 @@ Namespace My
         End Property
         
         '''<summary>
-        '''user5
+        '''user5.inactive
         '''</summary>
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Configuration.SettingsDescriptionAttribute("user5"),  _
+         Global.System.Configuration.SettingsDescriptionAttribute("user5.inactive"),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property y7pZ9AWbPxx_Cy_28X() As Integer
@@ -159,10 +159,10 @@ Namespace My
         End Property
         
         '''<summary>
-        '''user6
+        '''user6.inactive
         '''</summary>
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Configuration.SettingsDescriptionAttribute("user6"),  _
+         Global.System.Configuration.SettingsDescriptionAttribute("user6.inactive"),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property xcwsG_2Pga_sEtwzcj() As Integer

@@ -1,4 +1,5 @@
-﻿Imports System
+﻿Imports System.Resources
+Imports System
 Imports System.Reflection
 Imports System.Runtime.InteropServices
 
@@ -9,11 +10,11 @@ Imports System.Runtime.InteropServices
 ' Проверьте значения атрибутов сборки
 
 <Assembly: AssemblyTitle("finance_menu")>
-<Assembly: AssemblyDescription("")>
-<Assembly: AssemblyCompany("")>
+<Assembly: AssemblyDescription("finance menu confidence.")>
+<Assembly: AssemblyCompany("CoreCode Team")>
 <Assembly: AssemblyProduct("finance_menu")>
-<Assembly: AssemblyCopyright("Copyright ©  2023")>
-<Assembly: AssemblyTrademark("")>
+<Assembly: AssemblyCopyright("Copyright CoreCode Team©  2023")>
+<Assembly: AssemblyTrademark("CoreCode Corp.")>
 
 <Assembly: ComVisible(False)>
 
@@ -33,3 +34,4 @@ Imports System.Runtime.InteropServices
 
 <Assembly: AssemblyVersion("1.0.0.0")>
 <Assembly: AssemblyFileVersion("1.0.0.0")>
+<Assembly: NeutralResourcesLanguage("ru-RU")>
