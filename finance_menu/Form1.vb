@@ -44,18 +44,14 @@ Public Class Form1
         End If
     End Sub
     Private Sub Bb2_Click(sender As Object, e As EventArgs) Handles bb2.Click '1
-        If ProgressBar1.Maximum >= CInt(TextBox1.Text) Then
-            If TextBox1.Text = "" Then
-                Critical() : Exit Sub
-            Else
-                ProgressBar1.Maximum += CInt(TextBox1.Text) 'Изменение значения у progressbar'а
-                Label1.Text = CStr(ProgressBar1.Maximum) 'Принятие данных надписью "MONEY"
-                My.Settings.xZeyZSDtZ_M8PpJCn = ProgressBar1.Maximum 'Присвоение показателя в фиксированную настройку
-                My.Settings.Upgrade() 'Дубль сохранения данных
-                My.Settings.Save() 'Дубль сохранения данных
-            End If
+        If TextBox1.Text = "" Then
+            Critical() : Exit Sub
         Else
-            Critical_pb() : Exit Sub
+            ProgressBar1.Maximum += CInt(TextBox1.Text) 'Изменение значения у progressbar'а
+            Label1.Text = CStr(ProgressBar1.Maximum) 'Принятие данных надписью "MONEY"
+            My.Settings.xZeyZSDtZ_M8PpJCn = ProgressBar1.Maximum 'Присвоение показателя в фиксированную настройку
+            My.Settings.Upgrade() 'Дубль сохранения данных
+            My.Settings.Save() 'Дубль сохранения данных
         End If
     End Sub
     Private Sub Form1_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
@@ -102,18 +98,14 @@ Public Class Form1
         End If
     End Sub
     Private Sub bb4_Click(sender As Object, e As EventArgs) Handles bb4.Click '2
-        If ProgressBar2.Maximum >= CInt(TextBox2.Text) Then
-            If TextBox2.Text = "" Then
-                Critical() : Exit Sub
-            Else
-                ProgressBar2.Maximum += CInt(TextBox2.Text) 'Изменение значения у progressbar'а
-                Label2.Text = CStr(ProgressBar2.Maximum) 'Принятие данных надписью "MONEY"
-                My.Settings.y6X6eyNr_ZGNgPK2M = ProgressBar2.Maximum 'Присвоение показателя в фиксированную настройку
-                My.Settings.Upgrade() 'Дубль сохранения данных
-                My.Settings.Save() 'Дубль сохранения данных
-            End If
+        If TextBox2.Text = "" Then
+            Critical() : Exit Sub
         Else
-            Critical_pb() : Exit Sub
+            ProgressBar2.Maximum += CInt(TextBox2.Text) 'Изменение значения у progressbar'а
+            Label2.Text = CStr(ProgressBar2.Maximum) 'Принятие данных надписью "MONEY"
+            My.Settings.y6X6eyNr_ZGNgPK2M = ProgressBar2.Maximum 'Присвоение показателя в фиксированную настройку
+            My.Settings.Upgrade() 'Дубль сохранения данных
+            My.Settings.Save() 'Дубль сохранения данных
         End If
     End Sub
     Private Sub bb5_Click(sender As Object, e As EventArgs) Handles bb5.Click '3
@@ -132,18 +124,14 @@ Public Class Form1
         End If
     End Sub
     Private Sub bb6_Click(sender As Object, e As EventArgs) Handles bb6.Click '3
-        If ProgressBar3.Maximum >= CInt(TextBox3.Text) Then
-            If TextBox3.Text = "" Then
-                Critical() : Exit Sub
-            Else
-                ProgressBar3.Maximum += CInt(TextBox3.Text) 'Изменение значения у progressbar'а
-                Label3.Text = CStr(ProgressBar3.Maximum) 'Принятие данных надписью "MONEY"
-                My.Settings.W84Ammg_gcy__LhxKja = ProgressBar3.Maximum 'Присвоение показателя в фиксированную настройку
-                My.Settings.Upgrade() 'Дубль сохранения данных
-                My.Settings.Save() 'Дубль сохранения данных
-            End If
+        If TextBox3.Text = "" Then
+            Critical() : Exit Sub
         Else
-            Critical_pb() : Exit Sub
+            ProgressBar3.Maximum += CInt(TextBox3.Text) 'Изменение значения у progressbar'а
+            Label3.Text = CStr(ProgressBar3.Maximum) 'Принятие данных надписью "MONEY"
+            My.Settings.W84Ammg_gcy__LhxKja = ProgressBar3.Maximum 'Присвоение показателя в фиксированную настройку
+            My.Settings.Upgrade() 'Дубль сохранения данных
+            My.Settings.Save() 'Дубль сохранения данных
         End If
     End Sub
     Private Sub bb7_Click(sender As Object, e As EventArgs) Handles bb7.Click '4
@@ -162,18 +150,14 @@ Public Class Form1
         End If
     End Sub
     Private Sub bb8_Click(sender As Object, e As EventArgs) Handles bb8.Click '4
-        If ProgressBar4.Maximum >= CInt(TextBox4.Text) Then
-            If TextBox4.Text = "" Then
-                Critical() : Exit Sub
-            Else
-                ProgressBar4.Maximum += CInt(TextBox4.Text) 'Изменение значения у progressbar'а
-                Label4.Text = CStr(ProgressBar4.Maximum) 'Принятие данных надписью "MONEY"
-                My.Settings.JVJtJ4z_A9V3FnwmS = ProgressBar4.Maximum 'Присвоение показателя в фиксированную настройку
-                My.Settings.Upgrade() 'Дубль сохранения данных
-                My.Settings.Save() 'Дубль сохранения данных
-            End If
+        If TextBox4.Text = "" Then
+            Critical() : Exit Sub
         Else
-            Critical_pb() : Exit Sub
+            ProgressBar4.Maximum += CInt(TextBox4.Text) 'Изменение значения у progressbar'а
+            Label4.Text = CStr(ProgressBar4.Maximum) 'Принятие данных надписью "MONEY"
+            My.Settings.JVJtJ4z_A9V3FnwmS = ProgressBar4.Maximum 'Присвоение показателя в фиксированную настройку
+            My.Settings.Upgrade() 'Дубль сохранения данных
+            My.Settings.Save() 'Дубль сохранения данных
         End If
     End Sub
 End Class
